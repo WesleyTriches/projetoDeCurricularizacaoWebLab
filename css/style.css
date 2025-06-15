@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #142138 ;
+}
+
+#card {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(../img/); 
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* se quiser colocar img no backgroud */
+}
+
+.flip-card {
+  width: 300px;
+  height: 450px;
+  background-color: transparent;
+  perspective: 1000px;
+  /*movimento em 3D */
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-card .flip-card-back {
+  transform: rotateY(-180deg);
+}
+
+.flip-card-inner {
+  /* parte de dentro */
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-back,
+.flip-card-front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* img nao perder resolucao */
+  border-radius: 12px;
+}
+
+.home {
+  margin-top: 10vh; /* evitar com que a navbar fique em cima do texto */
+  padding: 40px;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #142138;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #142138 0%, #1E2A4D 100%);
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.texto {
+  flex: 1; /* tem um na imagem tambem que faz que eles dividam 50/50  */
+  max-width: 50%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.texto h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.texto h1, .texto p {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.imagem {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+}
+
+.imagem img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow:
+    0 15px 30px rgba(0,0,0,0.3),       
+    0 30px 60px 10px rgba(30, 144, 255, 0.2);
+}
+
+.imagem img:hover {
+  transform: scale(1.05); /* aumentar a img 10% ao passar o mouse */
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+  background: #142138;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  z-index: 1000;
+  border: none;
+}
+
+
+/* fazer linha embaixo da navbar */
+.navbar::after {
+  content: ''; /* sempre cria um conteudo vazio pra conseguir manipular */ 
+  display: block;
+  width: 90%;          
+  height: 2px;       
+  background-color: #AAB8C2;  /* cor da linha */
+  margin: 0 auto;      /* centralizar a linha */
+  border-radius: 2px;  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar ul,
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li,
+.mobile-menu li {
+  margin: 15px 20px;
+  position: relative;
+}
+
+.navbar a,
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+}
+
+.mobile-menu a {
+  font-size: 20px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.navbar a:hover,
+.mobile-menu a:hover {
+  transform: translateY(-3px); /* fazer com que o botao "suba" */
+}
+
+.navbar a::before,
+.mobile-menu a::before {
+  content: '';  /* Cria um “elemento virtual” vazio, para ser estilizado. */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #1E90FF;
+  transform: scaleX(0); /* linha comeca invisivel*/
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover::before,
+.mobile-menu a:hover::before {
+  transform: scaleX(1); /* linha aparece quando passar o mouse*/
+  transform-origin: bottom left;
+}
+/* Abrir menu na lateral (celulares) */
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 8vh;
+  right: -250px;
+  width: 250px;
+  height: 92vh;
+  background-color: #142138;
+  padding: 20px;
+  z-index: 1001; /* ficar na frente de tudo */ 
+  flex-direction: column;
+  align-items: center;
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  right: 0;
+  display: flex;
+}
+
+.mobile-menu-icon {
+  display: none;
+  position: absolute;
+  right: 20px;
+  z-index: 1100;
+}
+
+.mobile-menu-icon button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobile-menu-icon img {
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
+  user-select: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
+
+/* responsividade navbar */
+
+@media (max-width: 768px) {
+  .mobile-menu ul {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+  
+  /* home container */
+  .home-container {
+  flex-direction: column;
+  text-align: center;
+  }
+
+  /* texto */
+  .texto {
+    max-width: 100%;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  /* img */
+  .imagem img {
+  max-width: 100%;
+  }
+}
