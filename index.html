@@ -1,60 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cybersecurity</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <main>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li ><a href="./contato.html">Contato</a></li>
-                </ul>
+    <body>
+        <main>
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li ><a href="./contato.html">Contato</a></li>
+                    </ul>
 
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()">
-                        <img src="img/menu_white_36dp.svg" class="icon">
-                    </button>
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()">
+                            <img src="img/menu_white_36dp.svg" class="icon">
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu">
+                    <ul>  
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li ><a href="./contato.html">Contato</a></li>
+                    </ul>
                 </div>
-            </nav>
+            </header>
 
-            <div class="mobile-menu">
-                <ul>  
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li ><a href="./contato.html">Contato</a></li>
-                </ul>
-            </div>
-        </header>
-
-        <section class="home">
-            <div class="home-container">
-                <div class="texto">
-                <h1>>Você sabe o que é cibersegurança?</h1>
-                <p>Enquanto você pensa, alguém pode estar tentando acessar seus dados.</p>
+            <section class="home">
+                <div class="home-container">
+                    <div class="texto">
+                    <h1>>Você sabe o que é cibersegurança?</h1>
+                    <p>Enquanto você pensa, alguém pode estar tentando acessar seus dados.</p>
+                    </div>
+                    <div class="imagem">
+                        <img src="./img/mainImg.png" alt="">
+                    </div>
                 </div>
-                <div class="imagem">
-                    <img src="./img/mainImg.png" alt="">
+            </section>
+
+            <section class="security-wrapper">
+                <div class="security-info">
+                    <div class="security-container">
+                        <p>
+                            Hoje em dia, na internet, existem muitos riscos que podem afetar a sua segurança, como alguém tentando roubar seus dados, vírus no computador e golpes.<br>
+                            Por isso, é fundamental tomar cuidados para garantir que você navegue na internet com uma maior segurança.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            
+            </section>
 
-        </section>
+            <!-- cards de seguranca -->
 
-    </main>
+            <section class="squares-wrapper">
+                <div class="texto-esquerda-cards">
+                    <h2>>Aqui estão algumas dicas para se atentar:</h2>
+                    <p>Proteja suas informações pessoais e fique sempre alerta a esses cuidados essenciais.</p>
+                </div>
+                <div class="squares">
+                    <div class="card">
+                    <div class="circle"></div>
+                    <div class="card-text">
+                        <h3>Protocolo HTTPS</h3>
+                        <p>Confira o cadeado ao acessar sites no navegador, isso indica que o site é seguro</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="circle"></div>
+                    <div class="card-text">
+                        <h3>Cuidado com links suspeitos</h3>
+                        <p>Não clique em links suspeitos, de promoções milagrosas</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="circle"></div>
+                    <div class="card-text">
+                        <h3>Crie senhas fortes</h3>
+                        <p>Utilize carácteres especiais, números, letras... <br> Ative também a verificação em 2 etapas</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="circle"></div>
+                    <div class="card-text">
+                        <h3>Cuidado com redes públicas</h3>
+                        <p>Mantenha seu dispositivo atualizado, atente-se ao uso de rede pública</p>
+                    </div>
+                    </div>
+                </div>
+        </section>  
 
-    <footer>
-        <p>2025 © Todos os direitos reservados</p>
-    </footer>
-    <script src="./js/script.js"></script>
-</body>
+        </main>
+
+        <footer>
+            <p>2025 © Todos os direitos reservados</p>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
