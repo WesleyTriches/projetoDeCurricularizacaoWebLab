@@ -200,7 +200,7 @@ body {
 
 .card-text p {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* navbar */
@@ -255,7 +255,7 @@ body {
 .mobile-menu a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 10px 20px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -340,6 +340,51 @@ body {
   height: 36px;
   pointer-events: none;
   user-select: none;
+}
+
+#acessibility-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px; 
+}
+
+#acessibility-button img {
+  width: 24px;
+  height: 24px;
+}
+
+#acessibility-mobile {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#acessibility-mobile img {
+  width: 24px;
+  height: 24px;
+}
+
+/* mudar a fonte do html */
+html.font-large {
+  font-size: 120%;
+  transition: font-size 0.3s ease;
+}
+
+#acessibility-button:hover {
+  background-color: #1E90FF; 
+  color: white;              
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.7);
+  border-color: #1E90FF;
 }
 
 /* arquivo sobre */
@@ -433,6 +478,14 @@ html {
     right: 20px;
   }
 
+  #acessibility-button{
+    display: none;
+  }
+  
+  #acessibility-mobile{
+    display: inline-flex;
+  }
+
   /* home container */
   .home-container {
     flex-direction: column;
@@ -476,3 +529,6 @@ html {
     height: auto;
   }
 }
+
+
+

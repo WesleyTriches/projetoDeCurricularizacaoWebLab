@@ -21,3 +21,19 @@ menuLinks.forEach(link => {
         icon.src = "img/menu_white_36dp.svg";
     });
 });
+
+// codigo pro botao de acessibilidade
+const buttonDesktop = document.getElementById('acessibility-button')
+const buttonMobile = document.getElementById('acessibility-mobile')
+
+function toggleFontSize() {
+    document.documentElement.classList.toggle('font-large'); 
+}
+
+if(buttonDesktop) {
+    buttonDesktop.addEventListener('click', toggleFontSize);
+}
+
+if(buttonMobile) {
+  buttonMobile.addEventListener('click', toggleFontSize);
+}
