@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <main>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li ><a href="./contato.html">Contato</a></li>
-                </ul>
 
-                <button id="acessibility-button">
-                    <img src="img/acessibility-icon.svg" alt="Acessibilidade" >
-                </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="icon" href="img/lock_open_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
 
-                <button id="theme-toggle">
-                    <img id="theme-icon" src="img/sol.svg" alt="Icone de tema">
-                </button>
+    <body>
+        <main>
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
 
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()">
-                        <img src="img/menu_white_36dp.svg" class="icon">
+                    <button id="acessibility-button">
+                        <img src="img/acessibility-icon.svg" alt="Acessibilidade">
+                    </button>
+
+                    <button id="theme-toggle">
+                        <img id="theme-icon" src="img/sol.svg" alt="Icone de tema">
+                    </button>
+
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()">
+                            <img src="img/menu_white_36dp.svg" class="icon">
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+
+                    <button id="acessibility-mobile">
+                        <img src="img/acessibility-icon.svg" alt="Acessibilidade">
+                    </button>
+
+                    <button id="theme-toggle-mobile">
+                        <img id="theme-icon-mobile" src="img/sol.svg" alt="Ícone de tema">
                     </button>
                 </div>
-            </nav>
+            </header>
 
-            <div class="mobile-menu">
-                <ul>  
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li ><a href="./contato.html">Contato</a></li>
-                </ul>
+            <article class="formulario">
+                <form class="formFormulario">
+                    <h1>Formulário</h1>
+                    <h3>Preencha esse formulário para sabermos por onde os hackers tentariam entrar...</h3>
+                    <h3></h3>
+                    <div class="inputformulario">
+                        <input placeholder="Nome" type="text" required>
+                    </div>
+                    <div class="inputformulario">
+                        <input placeholder="Email" type="email" required>
+                    </div>
+                    <button type="submit" class="enviarformulario">Enviar</button>
+                    <div class="botaoformulario">
+                    </div>
+                </form>
+            </article>
 
-                <button id="acessibility-mobile">
-                    <img src="img/acessibility-icon.svg" alt="Acessibilidade">
-                </button>
+            <section class="cubo">
+                <div class="face frente"></div>
+                <div class="face costas"></div>
+                <div class="face direita"></div>
+                <div class="face esquerda"></div>
+                <div class="face cima"></div>
+                <div class="face baixo"></div>
+            </section>
 
-                <button id="theme-toggle-mobile">
-                    <img id="theme-icon-mobile" src="img/sol.svg" alt="Ícone de tema">
-                </button>
-            </div>
-        </header>
-    </main>
+            <section class="binarios">
+                <span>0</span>
+                <span>1</span>
+                <span>0</span>
+                <span>1</span>
+                <span>0</span>
+                <span>1</span>
+                <span>0</span>
+                <span>1</span>
+                <span>0</span>
+                <span>1</span>
+            </section>
+        </main>
 
-    <footer>
-        <p>2025 © Todos os direitos reservados</p>
-    </footer>
-    <script src="./js/script.js"></script>
-    
-</body>
+        <footer>
+            <p>2025 © Todos os direitos reservados</p>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
 </html>

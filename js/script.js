@@ -56,6 +56,10 @@ function updateThemeIcon(theme) {
     if (mainImage) {
         mainImage.src = (theme === 'light') ? 'img/mainImg.png' : 'img/Dark theme.png';
     }
+    const mainNeto = document.getElementById('Neto .jpg');
+    if (mainNeto) {
+        mainNeto.src = (theme === 'light') ? 'img/Neto .jpg' : 'img/NetoDark.jpg';
+    }
 }
 
 // alternar tema
@@ -86,3 +90,13 @@ if (savedTheme === 'light') {
   document.body.classList.add('dark-mode');
 }
 updateThemeIcon(savedTheme || 'dark');
+
+
+
+//enviar
+const alertaFormulario = document.querySelector('.enviarformulario');
+
+alertaFormulario.addEventListener('click', function(alerta) {
+  alerta.preventDefault(); // evita recarregar a pagina.
+  alert('Página em construção!');
+});

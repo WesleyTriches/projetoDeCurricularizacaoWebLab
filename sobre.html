@@ -1,154 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre</title>
+        <link rel="icon" href="img/lock_open_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <main>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                </ul>
+    <body>
+        <main>
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
 
-                <button id="acessibility-button">
-                    <img src="img/acessibility-icon.svg" alt="Acessibilidade">
-                </button>
+                    <button id="acessibility-button">
+                        <img src="img/acessibility-icon.svg" alt="Acessibilidade">
+                    </button>
 
-                <button id="theme-toggle">
-                    <img id="theme-icon" src="img/sol.svg" alt="Icone de tema">
-                </button>
+                    <button id="theme-toggle">
+                        <img id="theme-icon" src="img/sol.svg" alt="Icone de tema">
+                    </button>
 
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()">
-                        <img src="img/menu_white_36dp.svg" class="icon">
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()">
+                            <img src="img/menu_white_36dp.svg" class="icon">
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+
+                    <button id="acessibility-mobile">
+                        <img src="img/acessibility-icon.svg" alt="Acessibilidade">
+                    </button>
+
+                    <button id="theme-toggle-mobile">
+                        <img id="theme-icon-mobile" src="img/sol.svg" alt="Ícone de tema">
                     </button>
                 </div>
-            </nav>
+            </header>
 
-            <div class="mobile-menu">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./sobre.html">Sobre</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                </ul>
+            <section id="card">
+                <div class="flip-card-container">
 
-                <button id="acessibility-mobile">
-                    <img src="img/acessibility-icon.svg" alt="Acessibilidade">
-                </button>
-
-                <button id="theme-toggle-mobile">
-                    <img id="theme-icon-mobile" src="img/sol.svg" alt="Ícone de tema">
-                </button>
-            </div>
-        </header>
-
-        <section id="card">
-            <div class="flip-card-container">
-
-                <!--card1-->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <!--frente--> 
-                        <div class="flip-card-front">
-                            <img class="flip-card-bg" src="img/blueCard.jpg" alt="">
-                            <div class="flip-card-foto-wrapper">
-                                <img class="flip-card-foto" src="img/Neto .jpg" alt="">
+                    <!--card1-->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!--frente--> 
+                            <div class="flip-card-front">
+                                <img class="flip-card-bg" src="img/blueCard.jpg" alt="">
+                                <div class="flip-card-foto-wrapper">
+                                    <img class="flip-card-foto" id="Neto .jpg" src="img/Neto .jpg" alt="">
+                                </div>
+                            </div>
+                            <!--parte de tras-->
+                            <div class="flip-card-back">
+                                <div class="flip-card-texto">
+                                    <h3>Alberto Neto</h3>
+                                    <p>Olá meu nome é Alberto Luiz Marsaro Neto, sou aluno do curso de Ciências da
+                                        Computação. Sou de Roraima RR,
+                                        tenho 19 anos de idade. Gosto da área de tecnologia, tanto para hobby quanto para
+                                        trabalho. Tenho curiosidade
+                                        na resolução de problemas que podem ser resolvidos por meios de software ou
+                                        hardware. Gosto de explorar
+                                        o desconhecido e entender suas características, visando minha evolução pessoal e
+                                        profissional.</p>
+                                </div>
                             </div>
                         </div>
-                        <!--parte de tras-->
-                        <div class="flip-card-back">
-                            <div class="flip-card-texto">
-                                <h3>Alberto Neto</h3>
-                                <p>Olá meu nome é Alberto Luiz Marsaro Neto, sou aluno do curso de Ciências da
-                                    Computação. Sou de Roraima RR,
-                                    tenho 19 anos de idade. Gosto da área de tecnologia, tanto para hobby quanto para
-                                    trabalho. Tenho curiosidade
-                                    na resolução de problemas que podem ser resolvidos por meios de software ou
-                                    hardware. Gosto de explorar
-                                    o desconhecido e entender suas características, visando minha evolução pessoal e
-                                    profissional.</p>
+                    </div>
+
+                    <!--card2-->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!--frente-->
+                            <div class="flip-card-front">
+                                <img class="flip-card-bg" src="img/blueCard.jpg" alt="">
+                                <div class="flip-card-foto-wrapper">
+                                    <img class="flip-card-foto" src="img/Rafa.jpg" alt="">
+                                </div>
+                            </div>
+                            <!--parte de tras-->
+                            <div class="flip-card-back">
+                                <div class="flip-card-texto">
+                                    <h3>Rafael Luiz</h3>
+                                    <p>Olá, me chamo Rafael Luiz, sou natural de Passo Fundo - RS e tenho, no momento, 19
+                                        anos.
+                                        Sempre tive interesse em conhecer coisas novas, principalmente na área da
+                                        tecnologia, tanto no âmbito dos
+                                        softwares quanto na parte de hardware. Sou alguém que está constantemente estudando
+                                        e aprendendo coisas
+                                        novas, estando sempre atualizado na área. Dessa forma, estou incessantemente
+                                        evoluindo como pessoa
+                                        e como profissional, construindo uma carreira sólida e aprimorada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card3-->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <!--frente-->
+                            <div class="flip-card-front">
+                                <img class="flip-card-bg" src="img/blueCard.jpg" alt="">
+                                <div class="flip-card-foto-wrapper">
+                                    <img class="flip-card-foto" src="img/Wesley.jpg" alt="">
+                                </div>
+                            </div>
+                            <!--parte de tras-->
+                            <div class="flip-card-back">
+                                <div class="flip-card-texto">
+                                    <h3>Wesley Triches</h3>
+                                    <p>Wesley Triches, atualmente com 19 anos, com forte interesse em desenvolvimento de
+                                        software, tecnologia e
+                                        inovação. Estou sempre em busca de novos conhecimentos, buscando sempre evoluir
+                                        mais. Valorizo o poder
+                                        do conhecimento e acredito que o aprendizado constante é essencial para o
+                                        crescimento profissional.
+                                        Meu objetivo de carreira é construir uma trajetória sólida na área de
+                                        desenvolvimento de software,
+                                        evoluindo para posições como Engenheiro de Software ou Tech Lead, onde possa
+                                        contribuir tecnicamente
+                                        e também liderar iniciativas.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <!--card2-->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <!--frente-->
-                        <div class="flip-card-front">
-                            <img class="flip-card-bg" src="img/blueCard.jpg" alt="">
-                            <div class="flip-card-foto-wrapper">
-                                <img class="flip-card-foto" src="img/Rafa.jpg" alt="">
-                            </div>
-                        </div>
-                        <!--parte de tras-->
-                        <div class="flip-card-back">
-                            <div class="flip-card-texto">
-                                <h3>Rafael Luiz</h3>
-                                <p>Olá, me chamo Rafael Luiz, sou natural de Passo Fundo - RS e tenho, no momento, 19
-                                    anos.
-                                    Sempre tive interesse em conhecer coisas novas, principalmente na área da
-                                    tecnologia, tanto no âmbito dos
-                                    softwares quanto na parte de hardware. Sou alguém que está constantemente estudando
-                                    e aprendendo coisas
-                                    novas, estando sempre atualizado na área. Dessa forma, estou incessantemente
-                                    evoluindo como pessoa
-                                    e como profissional, construindo uma carreira sólida e aprimorada.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--card3-->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <!--frente-->
-                        <div class="flip-card-front">
-                            <img class="flip-card-bg" src="img/blueCard.jpg" alt="">
-                            <div class="flip-card-foto-wrapper">
-                                <img class="flip-card-foto" src="img/Wesley.jpg" alt="">
-                            </div>
-                        </div>
-                        <!--parte de tras-->
-                        <div class="flip-card-back">
-                            <div class="flip-card-texto">
-                                <h3>Wesley Triches</h3>
-                                <p>Wesley Triches, atualmente com 19 anos, com forte interesse em desenvolvimento de
-                                    software, tecnologia e
-                                    inovação. Estou sempre em busca de novos conhecimentos, buscando sempre evoluir
-                                    mais. Valorizo o poder
-                                    do conhecimento e acredito que o aprendizado constante é essencial para o
-                                    crescimento profissional.
-                                    Meu objetivo de carreira é construir uma trajetória sólida na área de
-                                    desenvolvimento de software,
-                                    evoluindo para posições como Engenheiro de Software ou Tech Lead, onde possa
-                                    contribuir tecnicamente
-                                    e também liderar iniciativas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>2025 © Todos os direitos reservados</p>
-    </footer>
-    <script src="./js/script.js"></script>
-
-</body>
-
+        <footer>
+            <p>2025 © Todos os direitos reservados</p>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
