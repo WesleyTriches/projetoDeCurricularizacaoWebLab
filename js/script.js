@@ -89,9 +89,9 @@ if (savedTheme === 'light') {
 } else if (savedTheme === 'dark') {
   document.body.classList.add('dark-mode');
 } else {
-  // Nenhum tema salvo → iniciamos no light-mode
   document.body.classList.add('light-mode');
 }
+
 updateThemeIcon(savedTheme || 'light');
 
 //enviar
