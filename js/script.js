@@ -84,13 +84,15 @@ if (themeToggleMobile) {
 
 // quando carregar a página, aplica tema salvo 
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
+if (savedTheme === 'light') {
+  document.body.classList.add('light-mode');
+} else if (savedTheme === 'dark') {
   document.body.classList.add('dark-mode');
-} else if (savedTheme === 'light') {
-  document.body.classList.remove('dark-mode');
 } else {
-  document.body.classList.add('dark-mode');
+  // Nenhum tema salvo → iniciamos no light-mode
+  document.body.classList.add('light-mode');
 }
+updateThemeIcon(savedTheme || 'light');
 
 //enviar
 const alertaFormulario = document.querySelector('.enviarformulario');
